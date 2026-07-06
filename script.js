@@ -117,11 +117,14 @@ document.addEventListener('DOMContentLoaded', () => {
     slides.forEach((_, i) => {
       const dot = document.createElement('button');
       dot.className = 'testi-dot' + (i === 0 ? ' active' : '');
-      dot.setAttribute('aria-label', `Show testimonial ${i + 1}`);
+      dot.setAttribute('aria-label', STONE_I18N.t('testimonials.dotLabel', { n: i + 1 }));
       dot.addEventListener('click', () => goTo(i));
       dotsWrap.appendChild(dot);
     });
     const dots = dotsWrap.querySelectorAll('.testi-dot');
+    document.addEventListener('stone:langchange', () => {
+      dots.forEach((d, i) => d.setAttribute('aria-label', STONE_I18N.t('testimonials.dotLabel', { n: i + 1 })));
+    });
     function goTo(i) {
       idx = i;
       track.style.transform = `translateX(-${idx * 100}%)`;
@@ -164,16 +167,16 @@ document.addEventListener('DOMContentLoaded', () => {
       const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
       if (!name || !email || !message) {
-        msg.textContent = 'Please fill in your name, email, and message before sending.';
+        msg.textContent = STONE_I18N.t('contact.formFillFields');
         msg.className = 'form-msg show err';
         return;
       }
       if (!emailOk) {
-        msg.textContent = 'That email address doesn\'t look right — please double check it.';
+        msg.textContent = STONE_I18N.t('contact.formBadEmail');
         msg.className = 'form-msg show err';
         return;
       }
-      msg.textContent = 'Request received. This is a demo form — connect it to your email or CRM to go live.';
+      msg.textContent = STONE_I18N.t('contact.formSuccess');
       msg.className = 'form-msg show ok';
       form.reset();
     });

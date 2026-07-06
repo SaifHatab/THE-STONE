@@ -6,11 +6,11 @@
 <title>Gallery — The Stone Security</title>
 <meta name="description" content="A look at The Stone Security's officers, patrol vehicles, and event coverage.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <link rel="icon" type="image/png" href="img/LOGO.png">
 </head>
-<body>
+<body data-page="gallery">
 
 <header class="site">
   <div class="wrap nav-row">
@@ -20,16 +20,17 @@
     </a>
     <nav class="main-nav">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="testimonials.html">Testimonials</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+        <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+        <li><a href="gallery.html" data-i18n="nav.gallery">Gallery</a></li>
+        <li><a href="testimonials.html" data-i18n="nav.testimonials">Testimonials</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
       </ul>
     </nav>
     <div class="nav-cta">
-      <a href="contact.html" class="btn solid">Request a Quote</a>
+      <a href="contact.html" class="btn solid" data-i18n="common.requestQuote">Request a Quote</a>
+      <button class="lang-toggle btn" type="button" aria-label="Switch language"><span data-lang-toggle>AR</span></button>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -37,60 +38,60 @@
 
 <div class="page-head">
   <div class="wrap">
-    <div class="eyebrow">Gallery</div>
-    <h1>Officers, vehicles &amp; coverage in the field.</h1>
-    <p class="lead">These tiles are placeholders — swap in real photos of your team, vehicles, and events. Click any tile to preview the lightbox behavior.</p>
+    <div class="eyebrow" data-i18n="gallery.eyebrow">Gallery</div>
+    <h1 data-i18n="gallery.h1">Officers, vehicles &amp; coverage in the field.</h1>
+    <p class="lead" data-i18n="gallery.lead">These tiles are placeholders — swap in real photos of your team, vehicles, and events. Click any tile to preview the lightbox behavior.</p>
   </div>
 </div>
 
 <section style="padding-top:0;">
   <div class="wrap" style="padding-top:60px;">
-    <h2 class="sr-only">Gallery</h2>
+    <h2 class="sr-only" data-i18n="gallery.srHeading">Gallery</h2>
     <div class="gallery-grid">
 
       <div class="gallery-tile reveal">
         <svg viewBox="0 0 24 24"><path d="M12 2 L21 6 V12 C21 17 17 21 12 22 C7 21 3 17 3 12 V6 Z"/></svg>
-        <div class="cap">Manned Guarding — Corporate Lobby</div>
+        <div class="cap" data-i18n="gallery.tile1">Manned Guarding — Corporate Lobby</div>
       </div>
 
       <div class="gallery-tile reveal">
         <svg viewBox="0 0 24 24"><rect x="2" y="9" width="20" height="8" rx="1"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>
-        <div class="cap">Mobile Patrol Vehicle</div>
+        <div class="cap" data-i18n="gallery.tile2">Mobile Patrol Vehicle</div>
       </div>
 
       <div class="gallery-tile reveal">
         <svg viewBox="0 0 24 24"><path d="M4 20 L4 8 L12 3 L20 8 L20 20 Z"/><path d="M9 20 V13 H15 V20"/></svg>
-        <div class="cap">Event Access Control</div>
+        <div class="cap" data-i18n="gallery.tile3">Event Access Control</div>
       </div>
 
       <div class="gallery-tile reveal">
         <svg viewBox="0 0 24 24"><rect x="3" y="7" width="14" height="10" rx="1"/><path d="M17 10 L21 7 V17 L17 14"/></svg>
-        <div class="cap">CCTV Monitoring Room</div>
+        <div class="cap" data-i18n="gallery.tile4">CCTV Monitoring Room</div>
       </div>
 
       <div class="gallery-tile reveal">
         <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21 C4 16 8 14 12 14 C16 14 20 16 20 21"/></svg>
-        <div class="cap">Officer Briefing</div>
+        <div class="cap" data-i18n="gallery.tile5">Officer Briefing</div>
       </div>
 
       <div class="gallery-tile reveal">
         <svg viewBox="0 0 24 24"><path d="M12 22 C7 20 4 16 4 11 V5 L12 2 L20 5 V11 C20 16 17 20 12 22 Z"/><path d="M9 12 L11 14 L15 9"/></svg>
-        <div class="cap">Construction Site Patrol</div>
+        <div class="cap" data-i18n="gallery.tile6">Construction Site Patrol</div>
       </div>
 
       <div class="gallery-tile reveal">
         <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7 V12 L15 15"/></svg>
-        <div class="cap">Night Shift Checkpoint</div>
+        <div class="cap" data-i18n="gallery.tile7">Night Shift Checkpoint</div>
       </div>
 
       <div class="gallery-tile reveal">
         <svg viewBox="0 0 24 24"><path d="M20 3 L34 9" transform="scale(0.6)"/><path d="M12 2 L21 6 V12 C21 17 17 21 12 22 C7 21 3 17 3 12 V6 Z"/></svg>
-        <div class="cap">Team Training Day</div>
+        <div class="cap" data-i18n="gallery.tile8">Team Training Day</div>
       </div>
 
       <div class="gallery-tile reveal">
         <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21 C4 16 8 14 12 14 C16 14 20 16 20 21"/><path d="M2 3 L4 5 M22 3 L20 5"/></svg>
-        <div class="cap">Executive Protection Detail</div>
+        <div class="cap" data-i18n="gallery.tile9">Executive Protection Detail</div>
       </div>
 
     </div>
@@ -99,10 +100,10 @@
 
 <section class="cta-band">
   <div class="wrap section-head center reveal" style="max-width:640px; margin:0 auto;">
-    <div class="eyebrow" style="justify-content:center">See Us In Action</div>
-    <h2>Want a walk-through of a live site?</h2>
+    <div class="eyebrow" style="justify-content:center" data-i18n="gallery.ctaEyebrow">See Us In Action</div>
+    <h2 data-i18n="gallery.ctaH2">Want a walk-through of a live site?</h2>
     <div class="hero-actions">
-      <a href="contact.html" class="btn solid">Request a Quote</a>
+      <a href="contact.html" class="btn solid" data-i18n="common.requestQuote">Request a Quote</a>
     </div>
   </div>
 </section>
@@ -115,41 +116,42 @@
           <img class="mark" src="img/LOGO.png" alt="The Stone Security logo">
           <span>The Stone Security</span>
         </a>
-        <p style="color:var(--slate); font-size:0.9rem; max-width:32ch;">Manned guarding, patrols, and protection services for businesses and private clients.</p>
+        <p style="color:var(--slate); font-size:0.9rem; max-width:32ch;" data-i18n="footer.blurbShort">Manned guarding, patrols, and protection services for businesses and private clients.</p>
       </div>
       <div>
-        <h3>Company</h3>
+        <h3 data-i18n="footer.company">Company</h3>
         <ul>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+          <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+          <li><a href="gallery.html" data-i18n="nav.gallery">Gallery</a></li>
+          <li><a href="testimonials.html" data-i18n="nav.testimonials">Testimonials</a></li>
         </ul>
       </div>
       <div>
-        <h3>Contact</h3>
+        <h3 data-i18n="footer.contact">Contact</h3>
         <ul>
-          <li><a href="contact.html">Get a Quote</a></li>
+          <li><a href="contact.html" data-i18n="footer.getQuote">Get a Quote</a></li>
           <li><a href="tel:+201285006333">012 8500 6333</a></li>
           <li><a href="mailto:thestone486@gmail.com">thestone486@gmail.com</a></li>
         </ul>
       </div>
     </div>
     <div class="foot-bottom">
-      <span>&copy; <span id="year"></span> The Stone Security. All rights reserved.</span>
-      <span>Sample content — replace with your licensing &amp; registration details.</span>
+      <span>&copy; <span id="year"></span> <span data-i18n="footer.copyright">The Stone Security. All rights reserved.</span></span>
+      <span data-i18n="footer.sample">Sample content — replace with your licensing &amp; registration details.</span>
     </div>
   </div>
 </footer>
 
 <div class="lightbox">
-  <button class="lightbox-close">CLOSE ✕</button>
+  <button class="lightbox-close" data-i18n="common.close">Close ✕</button>
   <div class="lightbox-inner">
     <svg viewBox="0 0 24 24"><path d="M12 2 L21 6 V12 C21 17 17 21 12 22 C7 21 3 17 3 12 V6 Z"/></svg>
     <p class="lightbox-caption" style="font-family:var(--font-mono); letter-spacing:0.08em; text-transform:uppercase; color:var(--bone-dim); font-size:0.85rem;"></p>
   </div>
 </div>
 
+<script src="i18n.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

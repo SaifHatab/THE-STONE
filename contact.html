@@ -6,11 +6,11 @@
 <title>Contact — The Stone Security</title>
 <meta name="description" content="Request a quote or get in touch with The Stone Security.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <link rel="icon" type="image/png" href="img/LOGO.png">
 </head>
-<body>
+<body data-page="contact">
 
 <header class="site">
   <div class="wrap nav-row">
@@ -20,16 +20,17 @@
     </a>
     <nav class="main-nav">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="testimonials.html">Testimonials</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+        <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+        <li><a href="gallery.html" data-i18n="nav.gallery">Gallery</a></li>
+        <li><a href="testimonials.html" data-i18n="nav.testimonials">Testimonials</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
       </ul>
     </nav>
     <div class="nav-cta">
-      <a href="contact.html" class="btn solid">Request a Quote</a>
+      <a href="contact.html" class="btn solid" data-i18n="common.requestQuote">Request a Quote</a>
+      <button class="lang-toggle btn" type="button" aria-label="Switch language"><span data-lang-toggle>AR</span></button>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -37,80 +38,80 @@
 
 <div class="page-head">
   <div class="wrap">
-    <div class="eyebrow">Get In Touch</div>
-    <h1>Let's put together a coverage plan.</h1>
-    <p class="lead">Fill out the form and our team will respond within one business day — or call the ops line directly for urgent requests.</p>
+    <div class="eyebrow" data-i18n="contact.eyebrow">Get In Touch</div>
+    <h1 data-i18n="contact.h1">Let's put together a coverage plan.</h1>
+    <p class="lead" data-i18n="contact.lead">Fill out the form and our team will respond within one business day — or call the ops line directly for urgent requests.</p>
   </div>
 </div>
 
 <section>
   <div class="wrap grid-2">
     <div class="reveal">
-      <h2>Send a Request</h2>
+      <h2 data-i18n="contact.sendRequest">Send a Request</h2>
       <form id="contact-form" novalidate>
         <div class="form-grid">
           <div class="field">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" placeholder="Jane Doe">
+            <label for="name" data-i18n="contact.fullName">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Doe" data-i18n-placeholder="contact.namePlaceholder">
           </div>
           <div class="field">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="jane@company.com">
+            <label for="email" data-i18n="contact.email">Email</label>
+            <input type="email" id="email" name="email" placeholder="jane@company.com" data-i18n-placeholder="contact.emailPlaceholder">
           </div>
           <div class="field">
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" name="phone" placeholder="012 8500 6333">
+            <label for="phone" data-i18n="contact.phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="012 8500 6333" data-i18n-placeholder="contact.phonePlaceholder">
           </div>
           <div class="field">
-            <label for="service">Service Needed</label>
+            <label for="service" data-i18n="contact.serviceNeeded">Service Needed</label>
             <select id="service" name="service">
-              <option>Manned Guarding</option>
-              <option>Mobile Patrols</option>
-              <option>CCTV &amp; Alarm Response</option>
-              <option>Event Security</option>
-              <option>Executive Protection</option>
-              <option>Construction / Vacant Site</option>
-              <option>Not Sure</option>
+              <option data-i18n="contact.opt1">Manned Guarding</option>
+              <option data-i18n="contact.opt2">Mobile Patrols</option>
+              <option data-i18n="contact.opt3">CCTV &amp; Alarm Response</option>
+              <option data-i18n="contact.opt4">Event Security</option>
+              <option data-i18n="contact.opt5">Executive Protection</option>
+              <option data-i18n="contact.opt6">Construction / Vacant Site</option>
+              <option data-i18n="contact.opt7">Not Sure</option>
             </select>
           </div>
           <div class="field full">
-            <label for="message">Tell us about your site or event</label>
-            <textarea id="message" name="message" rows="5" placeholder="Location, hours needed, number of officers, timeline..."></textarea>
+            <label for="message" data-i18n="contact.messageLabel">Tell us about your site or event</label>
+            <textarea id="message" name="message" rows="5" placeholder="Location, hours needed, number of officers, timeline..." data-i18n-placeholder="contact.messagePlaceholder"></textarea>
           </div>
         </div>
-        <button type="submit" class="btn solid">Send Request</button>
+        <button type="submit" class="btn solid" data-i18n="contact.send">Send Request</button>
         <div class="form-msg"></div>
       </form>
     </div>
 
     <div class="reveal">
-      <h2>Direct Lines</h2>
+      <h2 data-i18n="contact.directLines">Direct Lines</h2>
       <ul class="contact-info-list">
         <li>
-          <span class="lbl">Ops Line (24/7)</span>
+          <span class="lbl" data-i18n="contact.opsLineLabel">Ops Line (24/7)</span>
           <span class="val"><a href="tel:+201285006333">012 8500 6333</a></span>
         </li>
         <li>
-          <span class="lbl">Email</span>
+          <span class="lbl" data-i18n="contact.emailLabel">Email</span>
           <span class="val"><a href="mailto:thestone486@gmail.com">thestone486@gmail.com</a></span>
         </li>
         <li>
-          <span class="lbl">Office Address</span>
+          <span class="lbl" data-i18n="contact.addressLabel">Office Address</span>
           <span class="val" dir="rtl" lang="ar">شارع الهدى، متفرع من شارع الحكمة، الليبيني، الهرم<br><span dir="ltr">Giza, Egypt, 00000</span></span>
         </li>
         <li>
-          <span class="lbl">Office Hours</span>
-          <span class="val">Always Open — 24/7</span>
+          <span class="lbl" data-i18n="contact.officeHoursLabel">Office Hours</span>
+          <span class="val" data-i18n="contact.officeHoursValue">Always Open — 24/7</span>
         </li>
         <li>
-          <span class="lbl">Messenger</span>
+          <span class="lbl" data-i18n="contact.messengerLabel">Messenger</span>
           <span class="val" dir="rtl" lang="ar">شركة ذا ستون للأمن والحراسة</span>
         </li>
       </ul>
 
       <div class="map-block">
         <svg class="map-pin" viewBox="0 0 24 24"><path d="M12 2 C7 2 4 5.5 4 9.5 C4 15 12 22 12 22 C12 22 20 15 20 9.5 C20 5.5 17 2 12 2 Z M12 12 A2.5 2.5 0 1 1 12 7 A2.5 2.5 0 0 1 12 12 Z"/></svg>
-        <span class="map-note">Map placeholder — embed Google Maps or your preferred map provider here</span>
+        <span class="map-note" data-i18n="contact.mapNote">Map placeholder — embed Google Maps or your preferred map provider here</span>
       </div>
     </div>
   </div>
@@ -124,33 +125,34 @@
           <img class="mark" src="img/LOGO.png" alt="The Stone Security logo">
           <span>The Stone Security</span>
         </a>
-        <p style="color:var(--slate); font-size:0.9rem; max-width:32ch;">Manned guarding, patrols, and protection services for businesses and private clients.</p>
+        <p style="color:var(--slate); font-size:0.9rem; max-width:32ch;" data-i18n="footer.blurbShort">Manned guarding, patrols, and protection services for businesses and private clients.</p>
       </div>
       <div>
-        <h3>Company</h3>
+        <h3 data-i18n="footer.company">Company</h3>
         <ul>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+          <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+          <li><a href="gallery.html" data-i18n="nav.gallery">Gallery</a></li>
+          <li><a href="testimonials.html" data-i18n="nav.testimonials">Testimonials</a></li>
         </ul>
       </div>
       <div>
-        <h3>Contact</h3>
+        <h3 data-i18n="footer.contact">Contact</h3>
         <ul>
-          <li><a href="contact.html">Get a Quote</a></li>
+          <li><a href="contact.html" data-i18n="footer.getQuote">Get a Quote</a></li>
           <li><a href="tel:+201285006333">012 8500 6333</a></li>
           <li><a href="mailto:thestone486@gmail.com">thestone486@gmail.com</a></li>
         </ul>
       </div>
     </div>
     <div class="foot-bottom">
-      <span>&copy; <span id="year"></span> The Stone Security. All rights reserved.</span>
-      <span>Sample content — replace with your licensing &amp; registration details.</span>
+      <span>&copy; <span id="year"></span> <span data-i18n="footer.copyright">The Stone Security. All rights reserved.</span></span>
+      <span data-i18n="footer.sample">Sample content — replace with your licensing &amp; registration details.</span>
     </div>
   </div>
 </footer>
 
+<script src="i18n.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

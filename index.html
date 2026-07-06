@@ -6,11 +6,11 @@
 <title>The Stone Security — Protection, Patrols &amp; Peace of Mind</title>
 <meta name="description" content="The Stone Security provides manned guarding, mobile patrols, event and executive protection, and CCTV monitoring for commercial and private clients.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <link rel="icon" type="image/png" href="img/LOGO.png">
 </head>
-<body>
+<body data-page="home">
 
 <header class="site">
   <div class="wrap nav-row">
@@ -20,16 +20,17 @@
     </a>
     <nav class="main-nav">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="testimonials.html">Testimonials</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+        <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+        <li><a href="gallery.html" data-i18n="nav.gallery">Gallery</a></li>
+        <li><a href="testimonials.html" data-i18n="nav.testimonials">Testimonials</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
       </ul>
     </nav>
     <div class="nav-cta">
-      <a href="contact.html" class="btn solid">Request a Quote</a>
+      <a href="contact.html" class="btn solid" data-i18n="common.requestQuote">Request a Quote</a>
+      <button class="lang-toggle btn" type="button" aria-label="Switch language"><span data-lang-toggle>AR</span></button>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -38,25 +39,25 @@
 <section class="hero">
   <div class="wrap hero-grid">
     <div class="hero-copy">
-      <div class="eyebrow">24 / 7 Coverage · Licensed &amp; Insured</div>
-      <h1>Security that stands its ground.</h1>
-      <p class="lead">The Stone Security provides manned guarding, mobile patrols, event security, and executive protection to businesses and private clients who need a team that doesn't clock out.</p>
+      <div class="eyebrow" data-i18n="home.eyebrow">24 / 7 Coverage · Licensed &amp; Insured</div>
+      <h1 data-i18n="home.h1">Security that stands its ground.</h1>
+      <p class="lead" data-i18n="home.lead">The Stone Security provides manned guarding, mobile patrols, event security, and executive protection to businesses and private clients who need a team that doesn't clock out.</p>
       <div class="hero-actions">
-        <a href="contact.html" class="btn solid">Request a Quote</a>
-        <a href="services.html" class="btn">View Services</a>
+        <a href="contact.html" class="btn solid" data-i18n="common.requestQuote">Request a Quote</a>
+        <a href="services.html" class="btn" data-i18n="common.viewServices">View Services</a>
       </div>
       <div class="tag-row">
-        <span class="tag">Manned Guarding</span>
-        <span class="tag">Mobile Patrols</span>
-        <span class="tag">Event Security</span>
-        <span class="tag">CCTV Monitoring</span>
+        <span class="tag" data-i18n="home.tag1">Manned Guarding</span>
+        <span class="tag" data-i18n="home.tag2">Mobile Patrols</span>
+        <span class="tag" data-i18n="home.tag3">Event Security</span>
+        <span class="tag" data-i18n="home.tag4">CCTV Monitoring</span>
       </div>
     </div>
     <div class="ops-clock" aria-hidden="true">
       <svg viewBox="0 0 340 340">
         <circle cx="170" cy="170" r="150" fill="none" stroke="#3A4147" stroke-width="1"/>
         <circle cx="170" cy="170" r="132" fill="none" stroke="#3A4147" stroke-width="1"/>
-        <text class="core-label" x="170" y="160" text-anchor="middle">CURRENT SHIFT</text>
+        <text class="core-label" data-i18n="home.currentShift" x="170" y="160" text-anchor="middle">CURRENT SHIFT</text>
         <text class="core-value" x="170" y="190" text-anchor="middle">00:00</text>
       </svg>
     </div>
@@ -65,41 +66,41 @@
 
 <div class="ops-bar">
   <div class="wrap">
-    <div class="ops-stat"><span class="num" data-target="24" data-suffix="/7">0</span><span class="lbl">On Duty</span></div>
-    <div class="ops-stat"><span class="num" data-target="180" data-suffix="+">0</span><span class="lbl">Sites Protected</span></div>
-    <div class="ops-stat"><span class="num" data-target="12" data-suffix=" min">0</span><span class="lbl">Avg. Response</span></div>
-    <div class="ops-stat"><span class="num" data-target="15" data-suffix=" yrs">0</span><span class="lbl">In Operation</span></div>
+    <div class="ops-stat"><span class="num" data-target="24" data-suffix="/7">0</span><span class="lbl" data-i18n="home.opsOnDuty">On Duty</span></div>
+    <div class="ops-stat"><span class="num" data-target="180" data-suffix="+">0</span><span class="lbl" data-i18n="home.opsSites">Sites Protected</span></div>
+    <div class="ops-stat"><span class="num" data-target="12" data-suffix=" min">0</span><span class="lbl" data-i18n="home.opsResponse">Avg. Response</span></div>
+    <div class="ops-stat"><span class="num" data-target="15" data-suffix=" yrs">0</span><span class="lbl" data-i18n="home.opsYears">In Operation</span></div>
   </div>
 </div>
 
 <section>
   <div class="wrap">
     <div class="section-head center reveal">
-      <div class="eyebrow" style="justify-content:center">What We Do</div>
-      <h2>Coverage built around your risk, not a template.</h2>
+      <div class="eyebrow" style="justify-content:center" data-i18n="home.whatWeDo">What We Do</div>
+      <h2 data-i18n="home.whatWeDoH2">Coverage built around your risk, not a template.</h2>
     </div>
     <div class="grid-3">
       <div class="card reveal">
         <div class="icon-badge"><svg viewBox="0 0 24 24"><path d="M12 2 L21 6 V12 C21 17 17 21 12 22 C7 21 3 17 3 12 V6 Z"/></svg></div>
-        <div class="idx">01 — Guarding</div>
-        <h3>Manned Guarding</h3>
-        <p>Uniformed officers stationed at entry points, lobbies, and perimeters — trained to de-escalate before problems reach your staff or guests.</p>
+        <div class="idx" data-i18n="home.card1Idx">01 — Guarding</div>
+        <h3 data-i18n="home.card1H3">Manned Guarding</h3>
+        <p data-i18n="home.card1P">Uniformed officers stationed at entry points, lobbies, and perimeters — trained to de-escalate before problems reach your staff or guests.</p>
       </div>
       <div class="card reveal">
         <div class="icon-badge"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7 V12 L15 15"/></svg></div>
-        <div class="idx">02 — Patrols</div>
-        <h3>Mobile Patrols</h3>
-        <p>Marked vehicles run randomized routes across your properties overnight, with logged checkpoints and instant alerts on anything out of place.</p>
+        <div class="idx" data-i18n="home.card2Idx">02 — Patrols</div>
+        <h3 data-i18n="home.card2H3">Mobile Patrols</h3>
+        <p data-i18n="home.card2P">Marked vehicles run randomized routes across your properties overnight, with logged checkpoints and instant alerts on anything out of place.</p>
       </div>
       <div class="card reveal">
         <div class="icon-badge"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="14" height="10" rx="1"/><path d="M17 10 L21 7 V17 L17 14"/></svg></div>
-        <div class="idx">03 — Monitoring</div>
-        <h3>CCTV &amp; Alarm Response</h3>
-        <p>Live-monitored camera feeds and alarm lines, backed by an on-call unit that can be on-site fast when a sensor trips.</p>
+        <div class="idx" data-i18n="home.card3Idx">03 — Monitoring</div>
+        <h3 data-i18n="home.card3H3">CCTV &amp; Alarm Response</h3>
+        <p data-i18n="home.card3P">Live-monitored camera feeds and alarm lines, backed by an on-call unit that can be on-site fast when a sensor trips.</p>
       </div>
     </div>
     <div style="text-align:center; margin-top:40px;">
-      <a href="services.html" class="btn">See All Services</a>
+      <a href="services.html" class="btn" data-i18n="common.seeAllServices">See All Services</a>
     </div>
   </div>
 </section>
@@ -107,24 +108,24 @@
 <section>
   <div class="wrap grid-2">
     <div class="reveal">
-      <div class="eyebrow">Why Stone</div>
-      <h2>Every officer is vetted, licensed, and briefed on your site — not a rotating stranger.</h2>
-      <p class="lead">We keep account teams small and consistent, so the guard on your door tonight is the same one who was there last week and knows your building.</p>
+      <div class="eyebrow" data-i18n="home.whyStone">Why Stone</div>
+      <h2 data-i18n="home.whyH2">Every officer is vetted, licensed, and briefed on your site — not a rotating stranger.</h2>
+      <p class="lead" data-i18n="home.whyLead">We keep account teams small and consistent, so the guard on your door tonight is the same one who was there last week and knows your building.</p>
       <div class="value-row">
-        <div class="value-item"><span class="num">SIA</span><br>Licensed officers &amp; supervisors</div>
-        <div class="value-item"><span class="num">GPS</span><br>Logged, verifiable patrol routes</div>
-        <div class="value-item"><span class="num">1:1</span><br>Dedicated account manager per client</div>
+        <div class="value-item"><span class="num">SIA</span><br><span data-i18n="home.value1">Licensed officers &amp; supervisors</span></div>
+        <div class="value-item"><span class="num">GPS</span><br><span data-i18n="home.value2">Logged, verifiable patrol routes</span></div>
+        <div class="value-item"><span class="num">1:1</span><br><span data-i18n="home.value3">Dedicated account manager per client</span></div>
       </div>
-      <div style="margin-top:34px;"><a href="about.html" class="btn">More About Us</a></div>
+      <div style="margin-top:34px;"><a href="about.html" class="btn" data-i18n="common.moreAboutUs">More About Us</a></div>
     </div>
     <div class="card reveal" style="display:flex; flex-direction:column; justify-content:center;">
-      <div class="eyebrow">Sectors We Cover</div>
+      <div class="eyebrow" data-i18n="home.sectorsEyebrow">Sectors We Cover</div>
       <ul style="display:flex; flex-direction:column; gap:14px;">
-        <li style="border-bottom:1px solid var(--steel-line); padding-bottom:14px;">Corporate offices &amp; business parks</li>
-        <li style="border-bottom:1px solid var(--steel-line); padding-bottom:14px;">Retail &amp; shopping centres</li>
-        <li style="border-bottom:1px solid var(--steel-line); padding-bottom:14px;">Construction &amp; vacant sites</li>
-        <li style="border-bottom:1px solid var(--steel-line); padding-bottom:14px;">Private events &amp; VIP protection</li>
-        <li>Residential &amp; gated communities</li>
+        <li style="border-bottom:1px solid var(--steel-line); padding-bottom:14px;" data-i18n="home.sector1">Corporate offices &amp; business parks</li>
+        <li style="border-bottom:1px solid var(--steel-line); padding-bottom:14px;" data-i18n="home.sector2">Retail &amp; shopping centres</li>
+        <li style="border-bottom:1px solid var(--steel-line); padding-bottom:14px;" data-i18n="home.sector3">Construction &amp; vacant sites</li>
+        <li style="border-bottom:1px solid var(--steel-line); padding-bottom:14px;" data-i18n="home.sector4">Private events &amp; VIP protection</li>
+        <li data-i18n="home.sector5">Residential &amp; gated communities</li>
       </ul>
     </div>
   </div>
@@ -132,12 +133,12 @@
 
 <section class="cta-band">
   <div class="wrap section-head center reveal" style="max-width:640px; margin:0 auto;">
-    <div class="eyebrow" style="justify-content:center">Ready When You Are</div>
-    <h2>Get a site assessment this week.</h2>
-    <p class="lead">Tell us about your property or event and we'll put together coverage options within one business day.</p>
+    <div class="eyebrow" style="justify-content:center" data-i18n="home.ctaEyebrow">Ready When You Are</div>
+    <h2 data-i18n="home.ctaH2">Get a site assessment this week.</h2>
+    <p class="lead" data-i18n="home.ctaLead">Tell us about your property or event and we'll put together coverage options within one business day.</p>
     <div class="hero-actions">
-      <a href="contact.html" class="btn solid">Request a Quote</a>
-      <a href="tel:+201285006333" class="btn rust">Call the Ops Line</a>
+      <a href="contact.html" class="btn solid" data-i18n="common.requestQuote">Request a Quote</a>
+      <a href="tel:+201285006333" class="btn rust" data-i18n="common.callOpsLine">Call the Ops Line</a>
     </div>
   </div>
 </section>
@@ -150,33 +151,34 @@
           <img class="mark" src="img/LOGO.png" alt="The Stone Security logo">
           <span>The Stone Security</span>
         </a>
-        <p style="color:var(--slate); font-size:0.9rem; max-width:32ch;">Manned guarding, patrols, and protection services for businesses and private clients. Replace this copy with your own company details.</p>
+        <p style="color:var(--slate); font-size:0.9rem; max-width:32ch;" data-i18n="footer.blurb">Manned guarding, patrols, and protection services for businesses and private clients. Replace this copy with your own company details.</p>
       </div>
       <div>
-        <h3>Company</h3>
+        <h3 data-i18n="footer.company">Company</h3>
         <ul>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+          <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+          <li><a href="gallery.html" data-i18n="nav.gallery">Gallery</a></li>
+          <li><a href="testimonials.html" data-i18n="nav.testimonials">Testimonials</a></li>
         </ul>
       </div>
       <div>
-        <h3>Contact</h3>
+        <h3 data-i18n="footer.contact">Contact</h3>
         <ul>
-          <li><a href="contact.html">Get a Quote</a></li>
+          <li><a href="contact.html" data-i18n="footer.getQuote">Get a Quote</a></li>
           <li><a href="tel:+201285006333">012 8500 6333</a></li>
           <li><a href="mailto:thestone486@gmail.com">thestone486@gmail.com</a></li>
         </ul>
       </div>
     </div>
     <div class="foot-bottom">
-      <span>&copy; <span id="year"></span> The Stone Security. All rights reserved.</span>
-      <span>Sample content — replace with your licensing &amp; registration details.</span>
+      <span>&copy; <span id="year"></span> <span data-i18n="footer.copyright">The Stone Security. All rights reserved.</span></span>
+      <span data-i18n="footer.sample">Sample content — replace with your licensing &amp; registration details.</span>
     </div>
   </div>
 </footer>
 
+<script src="i18n.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

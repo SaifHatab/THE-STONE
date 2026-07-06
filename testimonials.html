@@ -6,11 +6,11 @@
 <title>Testimonials — The Stone Security</title>
 <meta name="description" content="What clients say about working with The Stone Security.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <link rel="icon" type="image/png" href="img/LOGO.png">
 </head>
-<body>
+<body data-page="testimonials">
 
 <header class="site">
   <div class="wrap nav-row">
@@ -20,16 +20,17 @@
     </a>
     <nav class="main-nav">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="testimonials.html">Testimonials</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+        <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+        <li><a href="gallery.html" data-i18n="nav.gallery">Gallery</a></li>
+        <li><a href="testimonials.html" data-i18n="nav.testimonials">Testimonials</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
       </ul>
     </nav>
     <div class="nav-cta">
-      <a href="contact.html" class="btn solid">Request a Quote</a>
+      <a href="contact.html" class="btn solid" data-i18n="common.requestQuote">Request a Quote</a>
+      <button class="lang-toggle btn" type="button" aria-label="Switch language"><span data-lang-toggle>AR</span></button>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -37,32 +38,32 @@
 
 <div class="page-head">
   <div class="wrap">
-    <div class="eyebrow">Testimonials</div>
-    <h1>What clients say.</h1>
-    <p class="lead">Sample quotes below — replace with real feedback from your clients (with their permission).</p>
+    <div class="eyebrow" data-i18n="testimonials.eyebrow">Testimonials</div>
+    <h1 data-i18n="testimonials.h1">What clients say.</h1>
+    <p class="lead" data-i18n="testimonials.lead">Sample quotes below — replace with real feedback from your clients (with their permission).</p>
   </div>
 </div>
 
 <section>
   <div class="wrap">
-    <h2 class="sr-only">Client Testimonials</h2>
+    <h2 class="sr-only" data-i18n="testimonials.srHeading">Client Testimonials</h2>
     <div class="testi-viewport reveal">
       <div class="testi-track">
         <div class="testi-slide">
-          <p class="testi-quote">"Stone's patrol team caught an issue at our warehouse at 3am and had it resolved before our morning shift even arrived. That's the kind of coverage we were missing before."</p>
-          <div class="testi-meta">Operations Director — Regional Logistics Company</div>
+          <p class="testi-quote" data-i18n="testimonials.q1">"Stone's patrol team caught an issue at our warehouse at 3am and had it resolved before our morning shift even arrived. That's the kind of coverage we were missing before."</p>
+          <div class="testi-meta" data-i18n="testimonials.m1">Operations Director — Regional Logistics Company</div>
         </div>
         <div class="testi-slide">
-          <p class="testi-quote">"We switched providers twice before Stone. The difference is the officers actually know our building — same faces every week, not a new guard every shift."</p>
-          <div class="testi-meta">Property Manager — Downtown Office Tower</div>
+          <p class="testi-quote" data-i18n="testimonials.q2">"We switched providers twice before Stone. The difference is the officers actually know our building — same faces every week, not a new guard every shift."</p>
+          <div class="testi-meta" data-i18n="testimonials.m2">Property Manager — Downtown Office Tower</div>
         </div>
         <div class="testi-slide">
-          <p class="testi-quote">"Booked them for a 400-guest gala with two weeks' notice. Access control was smooth, professional, and completely unobtrusive to our guests."</p>
-          <div class="testi-meta">Event Producer — Private Client</div>
+          <p class="testi-quote" data-i18n="testimonials.q3">"Booked them for a 400-guest gala with two weeks' notice. Access control was smooth, professional, and completely unobtrusive to our guests."</p>
+          <div class="testi-meta" data-i18n="testimonials.m3">Event Producer — Private Client</div>
         </div>
         <div class="testi-slide">
-          <p class="testi-quote">"Their account manager answers the phone at midnight if we need her to. That responsiveness alone is worth the contract."</p>
-          <div class="testi-meta">General Manager — Retail Shopping Centre</div>
+          <p class="testi-quote" data-i18n="testimonials.q4">"Their account manager answers the phone at midnight if we need her to. That responsiveness alone is worth the contract."</p>
+          <div class="testi-meta" data-i18n="testimonials.m4">General Manager — Retail Shopping Centre</div>
         </div>
       </div>
       <div class="testi-controls"></div>
@@ -73,21 +74,21 @@
 <section>
   <div class="wrap">
     <div class="section-head center reveal">
-      <div class="eyebrow" style="justify-content:center">Trusted By</div>
-      <h2>Sectors we've protected</h2>
+      <div class="eyebrow" style="justify-content:center" data-i18n="testimonials.sectorsEyebrow">Trusted By</div>
+      <h2 data-i18n="testimonials.sectorsH2">Sectors we've protected</h2>
     </div>
     <div class="grid-3">
       <div class="card reveal" style="text-align:center;">
-        <h3>Commercial Real Estate</h3>
-        <p>Office towers, business parks, and mixed-use developments.</p>
+        <h3 data-i18n="testimonials.sec1H3">Commercial Real Estate</h3>
+        <p data-i18n="testimonials.sec1P">Office towers, business parks, and mixed-use developments.</p>
       </div>
       <div class="card reveal" style="text-align:center;">
-        <h3>Retail &amp; Hospitality</h3>
-        <p>Shopping centres, hotels, and restaurant groups.</p>
+        <h3 data-i18n="testimonials.sec2H3">Retail &amp; Hospitality</h3>
+        <p data-i18n="testimonials.sec2P">Shopping centres, hotels, and restaurant groups.</p>
       </div>
       <div class="card reveal" style="text-align:center;">
-        <h3>Private Clients</h3>
-        <p>Residences, family offices, and event hosts.</p>
+        <h3 data-i18n="testimonials.sec3H3">Private Clients</h3>
+        <p data-i18n="testimonials.sec3P">Residences, family offices, and event hosts.</p>
       </div>
     </div>
   </div>
@@ -95,10 +96,10 @@
 
 <section class="cta-band">
   <div class="wrap section-head center reveal" style="max-width:640px; margin:0 auto;">
-    <div class="eyebrow" style="justify-content:center">Join Them</div>
-    <h2>Ready to see what consistent coverage feels like?</h2>
+    <div class="eyebrow" style="justify-content:center" data-i18n="testimonials.ctaEyebrow">Join Them</div>
+    <h2 data-i18n="testimonials.ctaH2">Ready to see what consistent coverage feels like?</h2>
     <div class="hero-actions">
-      <a href="contact.html" class="btn solid">Request a Quote</a>
+      <a href="contact.html" class="btn solid" data-i18n="common.requestQuote">Request a Quote</a>
     </div>
   </div>
 </section>
@@ -111,33 +112,34 @@
           <img class="mark" src="img/LOGO.png" alt="The Stone Security logo">
           <span>The Stone Security</span>
         </a>
-        <p style="color:var(--slate); font-size:0.9rem; max-width:32ch;">Manned guarding, patrols, and protection services for businesses and private clients.</p>
+        <p style="color:var(--slate); font-size:0.9rem; max-width:32ch;" data-i18n="footer.blurbShort">Manned guarding, patrols, and protection services for businesses and private clients.</p>
       </div>
       <div>
-        <h3>Company</h3>
+        <h3 data-i18n="footer.company">Company</h3>
         <ul>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+          <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+          <li><a href="gallery.html" data-i18n="nav.gallery">Gallery</a></li>
+          <li><a href="testimonials.html" data-i18n="nav.testimonials">Testimonials</a></li>
         </ul>
       </div>
       <div>
-        <h3>Contact</h3>
+        <h3 data-i18n="footer.contact">Contact</h3>
         <ul>
-          <li><a href="contact.html">Get a Quote</a></li>
+          <li><a href="contact.html" data-i18n="footer.getQuote">Get a Quote</a></li>
           <li><a href="tel:+201285006333">012 8500 6333</a></li>
           <li><a href="mailto:thestone486@gmail.com">thestone486@gmail.com</a></li>
         </ul>
       </div>
     </div>
     <div class="foot-bottom">
-      <span>&copy; <span id="year"></span> The Stone Security. All rights reserved.</span>
-      <span>Sample content — replace with your licensing &amp; registration details.</span>
+      <span>&copy; <span id="year"></span> <span data-i18n="footer.copyright">The Stone Security. All rights reserved.</span></span>
+      <span data-i18n="footer.sample">Sample content — replace with your licensing &amp; registration details.</span>
     </div>
   </div>
 </footer>
 
+<script src="i18n.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
